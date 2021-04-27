@@ -41,6 +41,14 @@ export class HomePage {
       }
     });
   }
+
+  async delete(id:string) {
+    
+    this.loading = await this.loaderPresent();
+    
+    this.http.delete("https://jsonplaceholder.typicode.com/posts/api/users?page=2")
+            .subscribe(() => console.log('Delete successful'));
+  }
   
   ionViewDidEnter() {
     this.getDataPost();

@@ -6,11 +6,11 @@
 
 <ion-content>
   <ion-item> <ion-input type="text" [(ngModel)]="post.userId"> </ion-input> </ion-item>
-  <ion-item> <ion-input type="text" [(ngModel)]="post.title"> </ion-input> </ion-item>
-  <ion-item> <ion-input type="text" [(ngModel)]="post.body"> </ion-input> </ion-item>
+  <ion-item> <ion-input type="text" [(ngModel)]="post.name"> </ion-input> </ion-item>
+  <ion-item> <ion-input type="text" [(ngModel)]="post.email"> </ion-input> </ion-item>
   <ion-button (click)="submit()">Simpan data</ion-button>
 
   <ion-fab bottom right edge>
-    <button ion-fab routerLink="/home"><ion-icon name="arrow-back-circle-outline"></ion-icon></button>
+    <button ion-fab routerLink="/home"><ion-icon name="arrow-back-circle-outline"></ion-icon>Pindah</button>
   </ion-fab>
 </ion-content>
