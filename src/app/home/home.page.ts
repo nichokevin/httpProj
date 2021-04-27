@@ -32,7 +32,7 @@ export class HomePage {
     
     this.loading = await this.loaderPresent();
     
-    this.http.get("https://regres.in/api/users?page=2").subscribe((res : any) => {
+    this.http.get("https://jsonplaceholder.typicode.com/posts/api/users?page=2").subscribe((res : any) => {
       console.log(res);
 
       this.dataPOST = res;
